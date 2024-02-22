@@ -1,31 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HomeWork</title>
-    <link rel="stylesheet" href="./css/2-snackbar.css" />
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li>
-          <a href="./index.html">back</a>
-        </li>
-      </ul>
-    </nav>
-    <form class="feedback-form">
-      <label>
-        Email
-        <input type="email" name="email" />
-      </label>
-      <label>
-        Message
-        <textarea class="message" name="message"></textarea>
-      </label>
-      <button type="submit">Submit</button>
-    </form>
-    <script type="module" src="./js/2-snackbar.js"></script>
-  </body>
-</html>
+<link rel="stylesheet" href="./css/2-snackbar.css" />
+<div class="div-link">
+  <a href="./index.html">back</a>
+</div>
+<form class="form">
+  <label>
+    Delay (ms)
+    <input class="delay" type="number" name="delay" required />
+  </label>
+
+  <fieldset>
+    <legend>State</legend>
+    <label>
+      <input
+        class="fulfilled"
+        type="radio"
+        name="state"
+        value="fulfilled"
+        required
+      />
+      Fulfilled
+    </label>
+    <label>
+      <input
+        class="rejected"
+        type="radio"
+        name="state"
+        value="rejected"
+        required
+      />
+      Rejected
+    </label>
+  </fieldset>
+
+  <button type="submit">Create notification</button>
+</form>
+<script type="module" src="./js/2-snackbar.js"></script>
