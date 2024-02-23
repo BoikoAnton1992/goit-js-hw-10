@@ -44,7 +44,7 @@ h1 {
 }
 
 
-.delay {
+input[name="delay"] {
     display: flex;
     flex-direction: column;
     width: 360px;
